@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    min-height: 100vh;
+    background-image: url("../img/bg-intro-desktop.png");
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+main , body, .TAS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section-one{
+    flex-basis: 40%;
+    color: white;
+}
+.section-one h1{
+    font-size: 2.9rem;
+}
+.section-two{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+.offer{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    text-align: center;
+    flex-basis: 20%;
+    padding: 2% 5%;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 6px 0 0;
+}
+.offer, form, input{
+    border-radius: 5px;
+}
+.offer span:first-child{
+    font-weight: 600;
+}
+.formclass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 4% 0%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 6px 0 0;
+}
+input{
+    min-height: 40px;
+    padding: 0% 4%;
+    font-weight: 600;
+    border: thin solid rgb(226, 224, 224);
+    color: hsl(246, 25%, 77%);
+}
+input, .TAS{
+    margin: 2% 6%;
+}
+input:focus{
+    color: black;
+}
+input[type=submit]{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.TAS{
+    color: hsl(246, 25%, 77%);
+    font-size: .75rem;
+}
+.TAS p span:last-child{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+.formdiv{
+    display: flex;
+    flex-direction: row;
+}
+.indexform{
+    flex-basis: 50%;
+}
+.indexform input{
+    min-width: 80%;
+    margin: 6% 0%;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+@media (max-width:680px) {
+    main{
+        flex-direction: column;
+    }
+    .section-one{
+        text-align: center;
+        margin: 10% 5%;
+    }
+    .section-one h1{
+        font-size: 1.9rem;
+    }
+    .section-two{
+        margin: 0% 5%;
+    }
+    .formdiv{
+        flex-direction: column;
+    }
+    .indexform{
+        flex-basis: 100%;
+    }
+    .offer{
+        margin: 4% 0%;
+    }
+    .indexform input{
+        min-width: 100%;
+    }
+}
+
+
+.homepage{
+    text-align: center;
+    flex-basis: 90%;
+}
