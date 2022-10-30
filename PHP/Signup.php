@@ -45,6 +45,6 @@
             }
             $connect->close();
         }else{
-            include('Signup.html');
+            include('../HTML/Signup.html');
         }
 ?>

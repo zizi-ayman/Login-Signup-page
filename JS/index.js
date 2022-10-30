@@ -48,3 +48,16 @@ function blurfun(input){
 function validateEmail(email){
     return email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 };
+
+/*-------------          Login.html          ------------*/
+
+let session = '<?php echo $_SESSION["info"]?>';
+if(session === 'false'){
+    node = document.getElementById('passwordfield');
+    let newNode = document.createElement("p");
+    newNode.style.textAlign ="center";
+    newNode.style.margin = '0% 6%';
+    newNode.style.color = 'hsl(0, 100%, 74%)';
+    newNode.appendChild(document.createTextNode("You have entered an invalid username or password!"));
+    node.parentNode.insertBefore(newNode, node.nextSibling);
+}

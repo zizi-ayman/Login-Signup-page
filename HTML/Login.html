@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login form</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,26 +25,13 @@
             <div class="offer">
                 <p id="test">Login to access your account</p>
             </div>
-            <form action="Login.php" method="POST" class="formclass">
+            <form action="../PHP/Login.php" method="POST" class="formclass">
                 <input type="email" name="email" id="emailfield" value="Email Address" onfocus="focusFun(this)" onblur="blurfun(this)" class="fields">
                 <input type="password" name="password" id="passwordfield" value="Password" onfocus="focusFun(this)" onblur="blurfun(this)" class="fields">
                 <input type="submit" value="Login" onclick="send()" name="loginpage">
             </form>
         </section>
     </main>
-    <script type="text/javascript">
-        let session = '<?php echo $_SESSION["info"]?>';
-        console.log(session);
-        if(session === 'false'){
-            node = document.getElementById('passwordfield');
-            let newNode = document.createElement("p");
-            newNode.style.textAlign ="center";
-            newNode.style.margin = '0% 6%';
-            newNode.style.color = 'hsl(0, 100%, 74%)';
-            newNode.appendChild(document.createTextNode("You have entered an invalid username or password!"));
-            node.parentNode.insertBefore(newNode, node.nextSibling);
-        }
-    </script>
-    <script src="JS/index.js"></script>
+    <script src="../JS/index.js"></script>
 </body>
 </html>

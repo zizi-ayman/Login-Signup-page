@@ -4,8 +4,8 @@
   $cookie_three = "regdate";
   $diff = "";
   if(!isset($_COOKIE[$cookie_one])) {
-    header("Location:index.php");
+    header("Location:../index.php");
   } else {
-    include('Menu.html');
+    include('../HTML/Menu.html');
   }
 ?>

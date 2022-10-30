@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp form</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../newpage.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +13,9 @@
 </head>
 <body>
     <main>
-        <section class="section-one">
-            <h1>Learn to code by watching others</h1>
-            <p>
-                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-                but understanding how developers think is invaluable.
-            </p>
-        </section>
         <section class="section-two">
-            <div class="offer">
-                <span>Try it free 7 days </span><span>then $20/mo. thereafter</span>
-            </div>
-            <form action="Signup.php" method="POST" class="formclass">
+            <form action="../PHP/Signup.php" method="POST" class="formclass">
+                <h1>Sign Up</h1>
                 <input type="text" name="fname" id="fnamefield" value="First Name" onfocus="focusFun(this)" onblur="blurfun(this)" class="fields">
                 <input type="text" name="lname" id="lnamefield" value="Last Name" onfocus="focusFun(this)" onblur="blurfun(this)" class="fields">
                 <input type="email" name="email" id="emailfield" value="Email Address" onfocus="focusFun(this)" onblur="blurfun(this)" class="fields">
@@ -39,6 +30,6 @@
             </form>
         </section>
     </main>
-    <script src="JS/index.js"></script>
+    <script src="../JS/index.js"></script>
 </body>
 </html>
